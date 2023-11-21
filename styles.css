@@ -1,0 +1,38 @@
+body {
+  font-family: arial;
+  color: #333;
+}
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
+}
+form {
+  width: 500px;
+  margin: 20px auto;
+}
+input {
+  display: block;
+  padding: 8px 16px;
+  font-size: 2em;
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  outline: none !important;
+}
+input.valid {
+  border: 3px solid rgb(7, 178, 7);
+}
+input.invalid {
+  border: 3px solid rgb(237, 10, 10);
+}
+input + p {
+  display: none;
+}
+input.invalid + p {
+    display: block;
+    margin-bottom: 20px;
+    color: red;
+}
